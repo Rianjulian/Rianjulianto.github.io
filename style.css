@@ -1,0 +1,842 @@
+/* ---------------------------------------------
+-------- G E N E R A L  S T Y L I N G ----------
+----------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', 'poppins';
+    color: white;
+}
+
+.fa-adjust{
+    color: #1D3944;
+    font-size: clamp(24px, 100%, 2rem);
+}
+
+.title h1 {
+    font-size: clamp(2em, 100% - 2px, 2.4em);
+    font-family: 'roboto slab';
+    font-weight: 800;
+    line-height: 1;
+}
+
+.title h2 {
+    /* Subtitle header Styling */
+    font-size: clamp(1em, 100% - 2px, 3em);
+    color: deepskyblue;
+}
+
+.heading__left {
+    text-align: left;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #040507;
+}
+
+nav,
+footer,
+main {
+    padding: 0 5vw;
+}
+
+/*
+============ NAV ===============
+*/
+
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    /* min-width: 100%; */
+    width: -webkit-fill-available;
+}
+
+.logo,
+.dark-mode {
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 2em;
+}
+
+
+/*
+============ HERO ===============
+*/
+
+section.hero-element {
+    display: grid;
+    height: 100vh;
+}
+
+.hello-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto 0;
+}
+
+.hello-text .hello {
+    font-family: 'roboto slab';
+    font-size: clamp(2em, 25vw, 13em);
+    text-align: center;
+    line-height: .8;
+    font-variant: all-small-caps;
+    color: white;
+}
+
+.hello-text .cursor {
+    display: flex;
+    width: 3rem;
+    height: 4.5rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    border-radius: 70px;
+}
+
+.fa-circle {
+    font-size: smaller;
+    animation: scroll 4s;
+    animation-iteration-count: infinite;
+    transition: 0.1s all;
+    color: white;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(-10px);
+        transition: 0.5s all;
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(0px);
+        transition: 0.5s all;
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        transition: 0.5s all;
+        opacity: 0;
+    }
+
+    75% {
+        transform: translateY(0px);
+        transition: 0.5s all;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-10px);
+        transition: 0.5s all;
+        opacity: 0;
+    }
+}
+
+.hello-text img {
+    position: absolute;
+    transform: rotate(300deg);
+    width: 400px;
+    bottom: -85%;
+    z-index: -1;
+}
+
+/*
+============ MYSELF ===============
+*/
+
+.wrapper-text {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    align-self: center;
+    gap: 60px;
+}
+
+.introduce-text p{
+    font-size: clamp(16px, 1vw, 2em);
+    color: #0695FA;
+    text-transform: uppercase;
+    line-height: 3;
+    font-weight: 600;
+}
+
+.introduce-text .name {
+    text-align: justify;
+    max-width: 600px;
+    letter-spacing: -1px;
+    font-size: clamp(26px, 2vw, 5em);
+    font-weight: 300;
+    font-family: 'roboto', 'sysytem-ui';
+    text-transform: uppercase;
+    line-height: 2.1;
+}
+
+.name a{
+    text-decoration: none;
+}
+
+.name span{
+    font-family: 'roboto slab';
+    font-weight: 800;
+}
+
+.link{
+    transition: all .2s;
+    background-color: #0695FA;
+}
+
+
+/*
+=========== ABOUT-ME ===============
+*/
+
+section.introducing {
+    display: grid;
+    align-items: center;
+    padding: 100px 0;
+    gap: 40px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.description-me p {
+    margin: 24px 0;
+    font-size: clamp(18px, 1vw, 2em);
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 1px;
+    max-width: 600px;
+}
+
+ .mockup {
+    display: none;
+}
+
+ .iphone{
+    width: 249px;
+    overflow: hidden;
+    height: 503px;
+    z-index: 10;
+}
+
+
+
+/*
+============ SKIP ===============
+*/
+
+
+section.skip-to-portfolio {
+    background-color: #0695FA;
+    margin: 5vw -5vw;
+    color: white;
+}
+
+
+.skip h1 {
+    padding: 4vw 5vw;
+    font-style: italic;
+    color: white;
+    max-width: 700px;
+    font-weight: 300;
+    font-size: clamp(18px, 3vw, 24px);
+    letter-spacing: .5px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.skip a {
+    color: white;
+    font-weight: bold;
+}
+
+
+/*
+======= CERTIFICATION ==========
+*/
+
+section.my-certification {
+    display: grid;
+    padding: 100px 0;
+    row-gap: 40px;
+}
+
+.certification {
+    display: grid;
+}
+
+.title-certification {
+    border-bottom: 1px solid #808080;
+    padding: 32px 4px;
+    display: grid;
+    transition: all 0.5s;
+}
+
+.title-head {
+    display: grid;
+    grid-template-columns: 1fr 1em;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    transition: all 0.5s;
+}
+
+.active{
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.explain {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 0;
+}
+
+.explain p {
+    color: lightgrey;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    padding-right: 28px;
+    margin-bottom: 10px;
+}
+
+.title-certification h1 {
+    order: 2;
+    grid-column: 1 / 2;
+    font-size: clamp(18px, 2vw, 20px);
+    font-weight: 400;
+}
+
+.title-certification h2 {
+    order: 1;
+    font-size: clamp(12px, 2vw, 20px);
+}
+
+.title-certification span {
+    order: 3;
+    grid-column: 2;
+    font-size: clamp(24px, 2vw, 24px);
+}
+
+
+
+/*
+========== PORTFOLIO ============
+*/
+
+section#my-portfolio {
+    display: grid;
+    padding: 100px 0;
+    row-gap: 40px;
+}
+
+.portfolio {
+    display: grid;
+    gap: 40px 20px;
+}
+
+figure {
+    position: relative;
+    border-radius: 1px;
+    height: fit-content;
+}
+
+.caption {
+    padding: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caption p {
+    font-size: clamp(16px, 2vw, 14px);
+    color: dodgerblue;
+}
+
+figcaption {
+    font-weight: 300;
+    font-size: clamp(24px, 1vw, 2em);
+}
+
+.cta{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+    transition: 2s all;
+}
+
+.image-porto{
+    transition: 1s all;
+}
+
+.cta a{
+    text-decoration: none;
+    padding: 16px;
+    opacity: 100%;
+    min-width: 100px;
+    text-align: center;
+    background-color: #0695FA;
+    border-radius: 1px;
+}
+
+a.btn-disabled{
+   background-color: #092f4b;
+   pointer-events: none;
+}
+
+/*
+============ STARTED ============
+*/
+
+section.started {
+    display: grid;
+    padding: 100px 0;
+    row-gap: 60px;
+    margin: 150px 0;
+}
+
+.idea h2 {
+    font-size: clamp(24px, 2vw, 18px);
+    font-weight: 300;
+}
+
+.idea h1 {
+    font-size: clamp(20px, 2vw, 24px);
+    margin-bottom: 4px;
+}
+
+.email a {
+    margin-right: 8px;
+    text-decoration: none;
+    font-size: clamp(20px, 2vw, 24px);
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+.email {
+    border-bottom: 2px solid;
+    width: max-content;
+    line-height: 2.6;
+}
+
+.fa-arrow-right {
+    transform: rotate(311deg);
+    font-size: 20px;
+    margin-left: 12px;
+    transition: 0.2s all;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.social-media {
+    display: grid;
+    padding-bottom: 40px;
+    row-gap: 40px;
+    border-bottom: 1px solid #808080;
+    /* border-top: 1px solid #808080; */
+}
+
+
+.follow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 40px;
+}
+
+.platform {
+    width: max-content;
+    /* border-bottom: 2px solid; */
+    line-height: 28px;
+}
+
+.platform a {
+    text-decoration: none;
+    font-size: clamp(20px, 2vw, 24px);
+    /* text-transform: uppercase; */
+}
+
+
+section.form-contact {
+    display: grid;
+    margin: 100px 0;
+    background-color: #090c0d;
+    grid-template-columns: 1fr 2fr;
+}
+
+.form {
+    display: grid;
+    padding: 60px;
+    align-content: center;
+    gap: 40px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #1d1f23;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea{
+    min-height: 80px;
+}
+
+.alert {
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    padding: 12px;
+}
+
+.alert button {
+    border: none;
+    height: 20px;
+    background: none;
+    width: 20px;
+    font-size: 16px;
+}
+
+label span {
+    color: indianred;
+    font: small-caption;
+}
+
+.submit, .loading{
+    background-color: #0695FA;
+    padding: 12px 28px;
+    text-align: center;
+    border: none;
+    border-radius: 1px;
+    min-width: 115px;
+}
+
+.loading{
+    background-color: #0172c4;
+}
+
+.d-none{
+    display: none;
+}
+
+
+
+
+/* ---------------------------------------------
+-------- G E N E R A L  S T Y L I N G ----------
+----------------------------------------------*/
+
+
+
+
+/* ---------------------------------------------
+---------- M O B I L E  S T Y L I N G ----------
+----------------------------------------------*/
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+
+    .hello-text img {
+        bottom: -80px;
+    }
+
+    /*
+_______ PORTFOLIO-MOBILE ________
+ */
+
+    .portfolio {
+        row-gap: 60px;
+    }
+
+    .image-porto{
+        opacity: 0.3;
+    }
+
+    .cta {
+        opacity: 1;
+    }
+
+
+    /*
+________ STARTED-MOBILE _________
+ */
+
+    section.started {
+        display: grid;
+        padding: 60px 0;
+        row-gap: 40px;
+        margin: 60px 0;
+    }
+
+    .project {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .follow {
+        grid-template-columns: repeat(2, minmax(100px, auto));
+        justify-items: left;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+
+        /*
+________ CONTACT-MOBILE _________
+ */
+
+ section.form-contact {
+    margin: 100px -5vw;
+    padding: 8vw 5vw;
+}
+
+    .form-contact img {
+        display: none;
+    }
+
+    .form {
+        padding: 0;
+        width: 90vw;
+    }
+
+
+}
+
+
+/* ---------------------------------------------
+---------- M O B I L E  S T Y L I N G ----------
+----------------------------------------------*/
+
+
+
+/* ---------------------------------------------
+---------- T A B L E T  S T Y L I N G ----------
+----------------------------------------------*/
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+
+    .hello-text img {
+        position: absolute;
+        transform: rotate(280deg);
+        width: 500px;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    /*
+------- ABOUT ME-TABLET --------
+*/
+
+    section.introducing {
+        grid-auto-flow: column;
+    }
+
+
+    /*
+-------- PORTFOLIO-TABLET -------
+*/
+
+    .portfolio {
+        grid-template-columns: repeat(2, minmax(200px, auto));
+    }
+
+    /*
+-------- STARTED-TABLET ---------
+*/
+
+    .follow {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* ---------------------------------------------
+---------- T A B L E T  S T Y L I N G ----------
+----------------------------------------------*/
+
+
+/* ---------------------------------------------
+-------- D E S K T O P  S T Y L I N G ----------
+----------------------------------------------*/
+
+
+@media only screen and (min-width: 992px) {
+
+    .scroller {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+
+    .hero-element {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        z-index: 9;
+    }
+
+    .hello-text {
+        width: 100%;
+    }
+
+    section.myself {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        place-content: center;
+        padding: 0;
+        transform: translateX(100%);
+        z-index: 8;
+    }
+
+    section.introducing{
+        grid-auto-flow: column;
+        margin: 20vh 0;
+    }
+
+    .mockup {
+        display: grid;
+        justify-items: center;
+        align-items: flex-end;
+        flex-direction: column;
+        overflow: hidden;
+        top: 94px;
+        right: 123px;
+        position: absolute;
+        z-index: -1;
+        height: 71%;
+        width: 21.6%;
+        background-color: black;
+        border-radius: 37.5px 37.5px 37.5px 37.5px / 37.5px 37.5px 37.5px 37.5px;
+        align-content: center;
+    }
+
+    .iphone{
+        width: 249px;
+        overflow: hidden;
+        height: 503px;
+        z-index: 10;
+    }
+
+    .phone-screen{
+        width: 103%;
+        position: absolute;
+        height: 96%;
+        display: flex;
+        border-radius: 21px;
+        justify-content: center;
+    }
+
+    .phone-screen img {
+        width: 90%;
+        position: absolute;
+    }
+
+    section.my-certification {
+        display: grid;
+        padding: 100px 80px;
+        margin: 200px 0 100px;
+        row-gap: 40px;
+        background-color: #090c0d;
+        border-radius: 4px;
+    }
+
+    section#my-portfolio {
+        gap: 80px;
+    }
+
+    .portfolio {
+        grid-template-columns: repeat(2, minmax(200px, 500px));
+        gap: 40px 60px;
+        justify-content: space-evenly;
+    }
+
+    figure:nth-child(even) {
+        grid-column: 2;
+        /* grid-row: 1 / span 4; */
+        margin-top: 80px;
+    }
+
+    .cta {
+        opacity: 0;
+        transition: 0.5s all;
+    }
+
+    .platform:hover .fa-arrow-right {
+        transform: rotate(311deg) translateX(5px);
+        transition: 0.2s all;
+    }
+
+    .email:hover .fa-arrow-right {
+        transform: rotate(311deg) translateX(5px);
+        transition: 0.2s all;
+    }
+
+    .link:hover{
+        background-color: transparent;
+        transition: all .2s;
+    }
+
+    figure:hover .image-porto{
+        opacity: 0.3;
+        transition: 0.3s all;
+    }
+
+    figure:hover .cta{
+        opacity: 1;
+        transition: 0.3s all;
+    }
+
+    input[type=submit]:hover{
+        background-color: #015896;
+    }
+
+}
