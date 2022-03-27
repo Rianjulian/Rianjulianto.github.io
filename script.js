@@ -182,10 +182,6 @@ ScrollTrigger.matchMedia({
 		});
 
 
-		console.log(allLines)
-		console.log(allLinesNotLast)
-
-
 		gsap.timeline({
 				defaults: {
 					duration: 50,
