@@ -555,8 +555,12 @@ label span {
     display: none;
 }
 
-
-
+.copyright {
+    text-align: center;
+    padding: 20px;
+    margin: 0 -5vw;
+    background-color: #0695FA;
+}
 
 /* ---------------------------------------------
 -------- G E N E R A L  S T Y L I N G ----------
