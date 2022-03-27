@@ -196,7 +196,6 @@ ScrollTrigger.matchMedia({
 					trigger: ".introducing",
 					start: 'top+=50px top',
 					end: "+=" + tt,
-					markers: true,
 					scrub: 0.5,
 					pin: true,
 					// pinSpacing: true,
