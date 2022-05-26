@@ -9,7 +9,7 @@
     color: white;
 }
 
-.fa-adjust{
+.fa-adjust {
     color: #1D3944;
     font-size: clamp(24px, 100%, 2rem);
 }
@@ -165,7 +165,7 @@ section.hero-element {
     gap: 60px;
 }
 
-.introduce-text p{
+.introduce-text p {
     font-size: clamp(16px, 1vw, 2em);
     color: #0695FA;
     text-transform: uppercase;
@@ -184,16 +184,16 @@ section.hero-element {
     line-height: 2.1;
 }
 
-.name a{
+.name a {
     text-decoration: none;
 }
 
-.name span{
+.name span {
     font-family: 'roboto slab';
     font-weight: 800;
 }
 
-.link{
+.link {
     transition: all .2s;
     background-color: #0695FA;
 }
@@ -225,11 +225,11 @@ section.introducing {
     max-width: 600px;
 }
 
- .mockup {
+.mockup {
     display: none;
 }
 
- .iphone{
+.iphone {
     width: 249px;
     overflow: hidden;
     height: 503px;
@@ -299,7 +299,7 @@ section.my-certification {
     transition: all 0.5s;
 }
 
-.active{
+.active {
     height: 100%;
     transition: all 0.5s;
 }
@@ -379,7 +379,7 @@ figcaption {
     font-size: clamp(24px, 1vw, 2em);
 }
 
-.cta{
+.cta {
     position: absolute;
     top: 0;
     width: 100%;
@@ -392,11 +392,11 @@ figcaption {
     transition: 2s all;
 }
 
-.image-porto{
+.image-porto {
     transition: 1s all;
 }
 
-.cta a{
+.cta a {
     text-decoration: none;
     padding: 16px;
     opacity: 100%;
@@ -406,9 +406,9 @@ figcaption {
     border-radius: 1px;
 }
 
-a.btn-disabled{
-   background-color: #092f4b;
-   pointer-events: none;
+a.btn-disabled {
+    background-color: #092f4b;
+    pointer-events: none;
 }
 
 /*
@@ -501,7 +501,9 @@ section.form-contact {
     gap: 40px;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
     width: 100%;
     padding: 12px;
     background: none;
@@ -514,7 +516,7 @@ input[type=text], input[type=email], textarea {
     resize: vertical;
 }
 
-textarea{
+textarea {
     min-height: 80px;
 }
 
@@ -538,7 +540,8 @@ label span {
     font: small-caption;
 }
 
-.submit, .loading{
+.submit,
+.loading {
     background-color: #0695FA;
     padding: 12px 28px;
     text-align: center;
@@ -547,11 +550,11 @@ label span {
     min-width: 115px;
 }
 
-.loading{
+.loading {
     background-color: #0172c4;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
@@ -588,7 +591,7 @@ _______ PORTFOLIO-MOBILE ________
         row-gap: 60px;
     }
 
-    .image-porto{
+    .image-porto {
         opacity: 0.3;
     }
 
@@ -620,14 +623,14 @@ ________ STARTED-MOBILE _________
         row-gap: 40px;
     }
 
-        /*
+    /*
 ________ CONTACT-MOBILE _________
  */
 
- section.form-contact {
-    margin: 100px -5vw;
-    padding: 8vw 5vw;
-}
+    section.form-contact {
+        margin: 100px -5vw;
+        padding: 8vw 5vw;
+    }
 
     .form-contact img {
         display: none;
@@ -741,46 +744,50 @@ ________ CONTACT-MOBILE _________
         z-index: 8;
     }
 
-    section.introducing{
+    section.introducing {
         grid-auto-flow: column;
         margin: 20vh 0;
     }
 
-    .mockup {
-        display: grid;
-        justify-items: center;
-        align-items: flex-end;
-        flex-direction: column;
-        overflow: hidden;
-        top: 94px;
-        right: 123px;
-        position: absolute;
-        z-index: -1;
-        height: 71%;
-        width: 21.6%;
-        background-color: black;
-        border-radius: 37.5px 37.5px 37.5px 37.5px / 37.5px 37.5px 37.5px 37.5px;
-        align-content: center;
+    .mockup-wrapper {
+        position: relative;
+        width: fit-content;
     }
 
-    .iphone{
+    .mockup {
+        display: grid;
+        flex-direction: column;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        border-radius: 37.5px 37.5px 37.5px 37.5px / 37.5px 37.5px 37.5px 37.5px;
+        bottom: 0;
+        border: 2px solid black;
+    }
+
+    .iphone {
         width: 249px;
         overflow: hidden;
         height: 503px;
         z-index: 10;
     }
 
-    .phone-screen{
-        width: 103%;
+    .phone-screen {
+        width: 100%;
         position: absolute;
-        height: 96%;
+        height: 100%;
         display: flex;
         border-radius: 21px;
         justify-content: center;
+        align-items: end;
     }
 
     .phone-screen img {
         width: 90%;
+        max-width: 230px;
         position: absolute;
     }
 
@@ -824,22 +831,22 @@ ________ CONTACT-MOBILE _________
         transition: 0.2s all;
     }
 
-    .link:hover{
+    .link:hover {
         background-color: transparent;
         transition: all .2s;
     }
 
-    figure:hover .image-porto{
+    figure:hover .image-porto {
         opacity: 0.3;
         transition: 0.3s all;
     }
 
-    figure:hover .cta{
+    figure:hover .cta {
         opacity: 1;
         transition: 0.3s all;
     }
 
-    input[type=submit]:hover{
+    input[type=submit]:hover {
         background-color: #015896;
     }
 
