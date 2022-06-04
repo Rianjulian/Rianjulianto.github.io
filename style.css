@@ -147,7 +147,7 @@ section.hero-element {
 
 .hello-text img {
     position: absolute;
-    transform: rotate(300deg);
+    transform: rotate(90deg);
     width: 400px;
     bottom: -85%;
     z-index: -1;
@@ -206,6 +206,7 @@ section.hero-element {
 section.introducing {
     display: grid;
     align-items: center;
+    justify-items: center;
     padding: 100px 0;
     gap: 40px;
 }
@@ -580,7 +581,7 @@ label span {
 
 
     .hello-text img {
-        bottom: -80px;
+        bottom: -400px;
     }
 
     /*
@@ -851,7 +852,7 @@ ________ CONTACT-MOBILE _________
     }
 
     .hello{
-        padding: 0 60px;
+        padding: 0 20%;
     }
 
 }
