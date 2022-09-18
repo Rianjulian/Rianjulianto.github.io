@@ -87,7 +87,7 @@ section.hero-element {
 
 .hello-text .hello {
     font-family: 'roboto slab';
-    font-size: clamp(2em, 25vw, 13em);
+    font-size: clamp(2em, 25vw + 1pt, 13em);
     text-align: center;
     line-height: .8;
     font-variant: all-small-caps;
@@ -745,6 +745,10 @@ ________ CONTACT-MOBILE _________
         z-index: 8;
     }
 
+    .introduce-text .name {
+        max-width: 20em;
+    }
+
     section.introducing {
         grid-auto-flow: column;
         margin: 20vh 0;
@@ -852,7 +856,7 @@ ________ CONTACT-MOBILE _________
     }
 
     .hello{
-        padding: 0 20%;
+        padding: 0 23%;
     }
 
 }
