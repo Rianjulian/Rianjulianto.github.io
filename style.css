@@ -450,7 +450,7 @@ section.started {
 .fa-arrow-right {
     transform: rotate(311deg);
     font-size: 20px;
-    margin-left: 12px;
+    margin-left: 10px;
     transition: 0.2s all;
 }
 
